@@ -1,27 +1,6 @@
 
 
 
-[![Build Status](https://travis-ci.org/mchirico/actionExperiment.svg?branch=master)](https://travis-ci.org/mchirico/actionExperiment)
-[![codecov](https://codecov.io/gh/mchirico/actionExperiment/branch/master/graph/badge.svg)](https://codecov.io/gh/mchirico/actionExperiment)
-
-[![Build Status](https://mchirico.visualstudio.com/actionExperiment/_apis/build/status/mchirico.actionExperiment?branchName=master)](https://mchirico.visualstudio.com/actionExperiment/_build/latest?definitionId=9&branchName=master)
-
-
-# actionExperiment
-
-
-
-### Checklist:
-
-1. dockerPassword
-2. [CodeCov Token](https://codecov.io/gh/mchirico)
-3. No Caps in project
-4. MONGO_CONNECTION_STRING
-5. MONGO_DATABASE 
-6. Make Azure Boards Public
-7. More Cobra commands? (cobra add say)
-
-
 
 ## Build with vendor
 ```
