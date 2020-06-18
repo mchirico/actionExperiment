@@ -10,7 +10,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     # IF event type is non fork PR or comment on PR from desivi with '/release'
-    if: github.event.label.name == 'test' && !github.event.label.name == 'hold' 
+    if: github.event.label.name == 'test' 
    
     steps:
 
