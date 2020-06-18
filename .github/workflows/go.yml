@@ -16,7 +16,6 @@ jobs:
         && github.event.issue.pull_request != ''
         && contains(github.event.comment.body, '/test')
         && github.actor == github.event.repository.owner.login
-        && github.event_name == 'pull_request'
       ) 
     steps:
 
