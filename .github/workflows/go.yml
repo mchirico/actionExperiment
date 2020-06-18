@@ -12,8 +12,7 @@ jobs:
     # IF event type is non fork PR or comment on PR from desivi with '/release'
     if: >-
       (
-        contains(github.event.comment.body, '/test')
-        && github.actor == github.event.repository.owner.login
+        contains(github.event.issue.labels.*.name, 'test') 
       ) 
     steps:
 
