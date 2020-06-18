@@ -5,6 +5,7 @@ git remote add upstream https://github.com/mchirico/actionExperiment.git
 
 git push -u origin n
 
+git fetch upstream
 
 ```
 
