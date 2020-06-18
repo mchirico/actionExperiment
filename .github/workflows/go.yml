@@ -10,10 +10,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     # IF event type is non fork PR or comment on PR from desivi with '/release'
-    if: >-
-      (
-        contains(github.event.issue.labels.*.name, 'test') 
-      ) 
+    if: github.event.label.name == 'test'
+   
     steps:
 
     - name: Set up Go 1.x
