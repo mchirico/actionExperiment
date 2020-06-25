@@ -21,6 +21,11 @@ jobs:
        )
    
     steps:
+    
+    - name: Variables
+      run: |
+        echo github.actor
+          
 
     - name: Set up Go 1.x
       uses: actions/setup-go@v2
