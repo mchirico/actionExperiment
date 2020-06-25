@@ -14,8 +14,8 @@ jobs:
     if: >- 
       (
        github.actor == github.event.repository.owner.login ||
-       ( contains(github.event.pull_request.labels.*.name, 'test') 
-       && ! contains(github.event.pull_request.labels.*.name, 'hold test'))
+       contains(github.event.pull_request.labels.*.name, 'test') 
+       && ! contains(github.event.pull_request.labels.*.name, 'hold test')
        )  
    
     steps:
