@@ -25,6 +25,7 @@ jobs:
     - name: Variables
       run: |
         echo github.actor
+        echo github.event.repository.owner.login
           
 
     - name: Set up Go 1.x
