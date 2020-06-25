@@ -15,7 +15,7 @@ jobs:
       (
        contains(github.event.pull_request.labels.*.name, 'test') 
        && ! contains(github.event.pull_request.labels.*.name, 'hold test')
-       ) 
+       ) || github.actor == github.event.repository.owner.login 
    
     steps:
 
