@@ -1,5 +1,9 @@
 ## Notes
 
+Only the owner of the repo, or a pull request with a 
+proper label can run actions.
+
+
 ```
 git remote add upstream https://github.com/mchirico/actionExperiment.git
 
