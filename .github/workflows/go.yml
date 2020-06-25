@@ -15,20 +15,11 @@ jobs:
       (
          contains(github.event.pull_request.labels.*.name, 'test') 
          && ! contains(github.event.pull_request.labels.*.name, 'hold test')
-       )  ||
-       (
-         github.actor == github.event.repository.owner.login
-       )
+       )  
    
     steps:
     
-    - name: Variables
-      run: |
-        echo github.actor
-        echo github.event.repository.owner.login
-          
-
-    - name: Set up Go 1.x
+      - name: Set up Go 1.x
       uses: actions/setup-go@v2
       with:
         go-version: ^1.14
