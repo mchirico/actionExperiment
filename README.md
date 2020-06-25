@@ -8,7 +8,38 @@ git push -u origin n
 git fetch upstream
 git merge upstream/master
 
+
 ```
+
+## Sample
+
+```
+cat ~/.gitconfig
+[user]
+    email = monk@sterlingpizza.com
+[core]
+    editor = emacs
+
+[alias]
+    st = status
+    co = checkout
+    p = push
+    fo = fetch upstream
+    di = diff --staged
+    ll = log --format=%B origin..HEAD
+    br = branch
+    cm = commit -am 'update'
+        rb = rebase master -i
+    l =  log --oneline
+    ls =  log --stat
+    lp = log -p
+    ln = log --oneline notes/commits
+    la = log --oneline --graph --decorate --all
+
+
+```
+
+
 
 
 
